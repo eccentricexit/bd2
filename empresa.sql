@@ -1,5 +1,3 @@
-sqlite3 empresa
-
 DROP TABLE IF EXISTS empregado;
 CREATE TABLE IF NOT EXISTS empregado (
 	id_empregado INTEGER PRIMARY KEY  AUTOINCREMENT,
@@ -9,8 +7,13 @@ CREATE TABLE IF NOT EXISTS empregado (
 	sexo TEXT,
 	salario REAL
 );
+INSERT INTO empregado values (null,'Marcos','Mendes','Rua Salmão, 100','m',3000.3);
+INSERT INTO empregado values (null,'Sofia','Wong','Avenida Rio Branco, 100','f',3500);
+INSERT INTO empregado values (null,'James','Nunes','Rua Salmão, 20','m',4000);
+INSERT INTO empregado values (null,'Vitória','Smith','Rua Adhemar de Barros, 3000','f',2000);
+INSERT INTO empregado values (null,'Pedro','Santos','Rua Ilha do Sul, 350','m',2000.5);
+INSERT INTO empregado values (null,'Alice','Silva','Rua José Antonio, 156','m',3555);
 
-INSERT INTO empregado values (null,'fulano','ciclano','rua das avenidas','m',345.25);
 
 DROP TABLE IF EXISTS dependente;
 CREATE TABLE IF NOT EXISTS dependente (
