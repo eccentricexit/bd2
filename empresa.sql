@@ -34,7 +34,7 @@ INSERT INTO dependente VALUES (null,'Elizabeth','f','Esposa',2);
 DROP TABLE IF EXISTS projeto;
 CREATE TABLE IF NOT EXISTS projeto (
 	cod_proj INTEGER PRIMARY KEY NOT NULL,
-	nome TEXT NOT NULL,	
+	nome TEXT NOT NULL	
 );
 INSERT INTO projeto VALUES (100,'Projeto 1000');
 INSERT INTO projeto VALUES (200,'Projeto 2000');
@@ -53,10 +53,10 @@ CREATE TABLE IF NOT EXISTS trabalha (
 	FOREIGN KEY (id_empregado) REFERENCES empregado(id_empregado)
 		
 );
-INSERT VALUES INTO trabalha VALUES (null,10,'programador',100,1);
-INSERT VALUES INTO trabalha VALUES (null,5,'analista',100,1);
-INSERT VALUES INTO trabalha VALUES (null,5,'testador',300,1);
-INSERT VALUES INTO trabalha VALUES (null,10,'analista',400,1);
+INSERT INTO trabalha VALUES (null,10,'programador',100,1);
+INSERT INTO trabalha VALUES (null,5,'analista',100,1);
+INSERT INTO trabalha VALUES (null,5,'testador',300,1);
+INSERT INTO trabalha VALUES (null,10,'analista',400,1);
 
 
 
