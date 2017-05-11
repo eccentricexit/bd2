@@ -34,7 +34,7 @@ CREATE TABLE Produto (id_produto INTEGER PRIMARY KEY AUTOINCREMENT, descricao VA
 INSERT INTO Produto (id_produto, descricao, preco) VALUES (50, 'caneta', '1.3');
 INSERT INTO Produto (id_produto, descricao, preco) VALUES (51, 'Lapis', '1.2');
 INSERT INTO Produto (id_produto, descricao, preco) VALUES (52, 'Caderno', '5.5');
-INSERT INTO Produto (id_produto, descricao, preco) VALUES (53, 'Brracha', '0.7');
+INSERT INTO Produto (id_produto, descricao, preco) VALUES (53, 'Borracha', '0.7');
 INSERT INTO Produto (id_produto, descricao, preco) VALUES (54, 'Apagador', '3.35');
 
 --Exe 1, Aula 2
