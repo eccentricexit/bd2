@@ -63,7 +63,7 @@ INSERT INTO trabalha VALUES (null,5,'analista',200,4);
 INSERT INTO trabalha VALUES (null,3,'projetista',300,4);
 INSERT INTO trabalha VALUES (null,7,'testador',200,6);
 
---EXE 2.6, aula 2
+--EXE 2, aula 2
 SELECT primeiro_nome,sexo,salario*1.2 from empregado;
 SELECT nome FROM dependente WHERE parentesco='Filho' OR parentesco='filho';
 SELECT primeiro_nome,ultimo_nome,salario from empregado WHERE salario BETWEEN 2000 AND 4000;

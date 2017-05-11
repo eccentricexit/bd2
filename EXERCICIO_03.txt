@@ -1,0 +1,26 @@
+/*a)Listar o nome de todos autores que tenham a letra A ou a em qualquer posição do nome.*/
+/*SELECT * FROM AUTOR A WHERE A.NOME LIKE '%A%' OR A.NOME LIKE '%a%'*/
+
+/*b)Listar todos os empréstimos realizados no mês de janeiro.*/
+/*SELECT * FROM EMPRESTIMO E WHERE E.DATA_EMPRESTIMO LIKE '%/01%'
+
+/*c)Listar todos os empréstimos que foram devolvidos no mês de fevereiro.*/
+/*SELECT * FROM EMPRESTIMO E WHERE E.DATA_DEVOLUCAO LIKE '%/02/%'*/
+
+/*d)Listar editora e título de todos os livros publicados em 2014 ou que sejam da editora intrínseca.*/
+/*SELECT EDITORA,TITULO FROM LIVRO L WHERE ANO_PUBLICACAO = 2014 OR EDITORA = 'intriseca'*/
+
+/*e)Listar nome e sexo dos usuários que nasceram em anos com final 9.*/
+/*SELECT NOME, SEXO FROM USUARIO WHERE DATA_NASCIMENTO LIKE '__/__/___9'*/
+
+/*f)Listar editora, título e ano de publicação dos livros que tenham ‘ra’ no meio do título.*/
+/*SELECT EDITORA, TITULO, ANO_PUBLICACAO FROM LIVRO WHERE TITULO LIKE '%_ra_%'*/
+
+/*g)Listar todos autores brasileiros.*/
+/*SELECT * FROM AUTOR WHERE NACIONALIDADE = 'Brasil'*/
+
+/*h)Listar todos autores que sejam dos EUA e tenham ‘o’ no meio do nome.*/
+/*SELECT * FROM AUTOR A WHERE NACIONALIDADE = 'EUA' AND NOME LIKE '%_o_%'*/
+
+/*i)Listar nome, sexo e data de nascimento de todos usuários que sejam nascidos no mês de outubro e sejam do sexo feminino.*/
+/*SELECT NOME, SEXO, DATA_NASCIMENTO FROM USUARIO WHERE DATA_NASCIMENTO LIKE '__/10/%' AND SEXO = 'F'*/
