@@ -29,6 +29,8 @@ CREATE TABLE IF NOT EXISTS dependente (
 INSERT INTO dependente VALUES (null,'Carlos','m','Filho',1);
 INSERT INTO dependente VALUES (null,'Daniel','m','Filho',1);
 INSERT INTO dependente VALUES (null,'Elizabeth','f','Esposa',2);
+INSERT INTO dependente VALUES (null,'Miguel','m','Filho',6);
+INSERT INTO dependente VALUES (null,'Charlie','m','Marido',6);
 
 
 DROP TABLE IF EXISTS projeto;
@@ -54,12 +56,24 @@ CREATE TABLE IF NOT EXISTS trabalha (
 		
 );
 INSERT INTO trabalha VALUES (null,10,'programador',100,1);
-INSERT INTO trabalha VALUES (null,5,'analista',100,1);
-INSERT INTO trabalha VALUES (null,5,'testador',300,1);
-INSERT INTO trabalha VALUES (null,10,'analista',400,1);
+INSERT INTO trabalha VALUES (null,5,'analista',100,2);
+INSERT INTO trabalha VALUES (null,5,'testador',300,3);
+INSERT INTO trabalha VALUES (null,10,'analista',400,3);
+INSERT INTO trabalha VALUES (null,5,'analista',200,4);
+INSERT INTO trabalha VALUES (null,3,'projetista',300,4);
+INSERT INTO trabalha VALUES (null,7,'testador',200,6);
 
-
-
+--EXE 2.6, aula 2
+SELECT primeiro_nome,sexo,salario*1.2 from empregado;
+SELECT nome FROM dependente WHERE parentesco='Filho' OR parentesco='filho';
+SELECT primeiro_nome,ultimo_nome,salario from empregado WHERE salario BETWEEN 2000 AND 4000;
+SELECT funcao FROM empregado e 
+	INNER JOIN trabalha t ON e.id_empregado=t.id_empregado
+	WHERE t.qtd_horas > 5;
+SELECT primeiro_nome,salario FROM empregado WHERE primeiro_nome LIKE "%a%";
+SELECT * FROM empregado WHERE endereco LIKE "%r%" OR endereco LIKE "%R%";
+SELECT nome,parentesco FROM dependente WHERE id_empregado=1;
+SELECT * from empregado WHERE sexo='f' AND (primeiro_nome LIKE "%i%" OR ultimo_nome LIKE "%i");
 
 
 
